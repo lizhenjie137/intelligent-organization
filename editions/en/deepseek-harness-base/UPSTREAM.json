@@ -1,0 +1,22 @@
+{
+  "name": "DeepSeek Harness",
+  "repository": "https://github.com/deepseek-ai/deepseek-harness",
+  "tag": "dsh-v0.2.2-rc.2",
+  "commit": "ddac96760b6edf8fa0fe17cbdcf0b512f4c12b2c",
+  "sdk_distribution": "deepseek-harness-sdk",
+  "runtime_distribution": "deepseek-harness-runtime-bin",
+  "python_distribution_version": "0.2.2rc2",
+  "source_directory": "Optional: vendor/deepseek-harness, fetched by ../Install.ps1 -FetchUpstreamSource",
+  "license": "MIT",
+  "license_file": "../THIRD_PARTY/deepseek-harness-LICENSE",
+  "integration_type": "Embedded through the official Python SDK and bundled dsh runtime",
+  "organization_source": "../server.py, ../auth.py, ../harness/ and ../web/ in this independent source package",
+  "status": "Editable source preview; no application or upstream source publication performed",
+  "compatibility_overlays": {
+    "windows_runtime_cwd": "C:/ only for process startup; task workspaces and homes stay inside this folder",
+    "windows_runtime_cwd_reference": "https://github.com/deepseek-ai/deepseek-harness/discussions/10269",
+    "sdk_pipe_cleanup": "After official SDK close and confirmed process exit, close the retained stdout/stderr handles for pinned SDK 0.2.2rc2",
+    "vendor_source_modified": false,
+    "installed_sdk_modified": false
+  }
+}

@@ -1,0 +1,51 @@
+name: Source checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    name: Windows (${{ matrix.edition }})
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        edition: [zh, en]
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: editions/${{ matrix.edition }}
+    timeout-minutes: 20
+    env:
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: '22'
+      - name: Install pinned runtime packages
+        shell: pwsh
+        run: ./Install.ps1
+      - name: Python regression tests with temporary workspaces
+        shell: pwsh
+        run: ./deepseek-harness-base/.venv/Scripts/python.exe -X utf8 -W always::ResourceWarning -m unittest discover -s tests -v
+      - name: Browser-state unit tests
+        shell: pwsh
+        run: node --test tests/auth_frontend.test.cjs tests/coordination_assignment.test.cjs tests/desktop_shell.test.cjs
+      - name: Install pinned freezing tools
+        shell: pwsh
+        run: ./deepseek-harness-base/.venv/Scripts/python.exe -m pip install -r desktop/requirements-build.txt
+      - name: Build self-contained Windows backend
+        shell: pwsh
+        run: ./deepseek-harness-base/.venv/Scripts/python.exe -X utf8 scripts/build_backend.py
+      - name: Check frozen backend with local model fixture
+        shell: pwsh
+        run: ./deepseek-harness-base/.venv/Scripts/python.exe -X utf8 -W always::ResourceWarning scripts/verify_desktop_backend.py

@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.venv/
+data/
+runtime/
+verification/
+.env
+.env.*
+*.log
+*.db
+*.db-*
+*.sqlite*
+*.dpapi
+*.model-settings.json
+*.credentials.json
+deepseek-harness-base/vendor/
+deepseek-harness-base/config/connection.json
+.DS_Store
+Thumbs.db
+
+# Desktop build outputs and local profiles
+node_modules/
+build/
+dist/
+*.log
+

@@ -1,0 +1,17 @@
+name: Bug report
+description: Describe a reproducible problem without private workspace data.
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps and expected result
+      description: Use a fresh temporary workspace. Do not attach account databases, passwords, API keys or private documents.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Edition, Windows version, Python version, commit or source manifest version, and redacted error text.
+    validations:
+      required: true

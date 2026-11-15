@@ -200,6 +200,15 @@ Extract the source archive for your language and run from its root:
 .\Start-Xiaolajiao.ps1
 ```
 
+If you clone the entire repository with Git, enter the edition directory before running the installation and startup commands above. For the English edition:
+
+```powershell
+git clone https://github.com/lizhenjie137/intelligent-organization.git
+cd intelligent-organization\editions\en
+```
+
+Use `editions/zh` for Chinese. The repository root is not an application run directory; an independent source ZIP runs directly from its extracted directory.
+
 The browser address is `http://127.0.0.1:8769` for Chinese and `http://127.0.0.1:8771` for English. Register in the same way. If the port is occupied, the startup script stops with an explanation instead of treating an existing service as this workspace. Choose an unused port, for example:
 
 ```powershell

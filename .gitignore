@@ -1,0 +1,43 @@
+# Local workspaces and credentials, at any edition or repository depth
+data/
+runtime/
+verification/
+.verification/
+*.db
+*.db-*
+*.sqlite*
+*.dpapi
+*.model-settings.json
+*.credentials.json
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+**/deepseek-harness-base/config/connection.json
+
+# Installed dependencies and local build output
+.venv/
+venv/
+.build-env/
+node_modules/
+build/
+dist/
+vendor/
+__pycache__/
+*.py[cod]
+*.log
+*.pid
+*.exe
+*.msi
+*.zip
+*.7z
+*.dmg
+*.AppImage
+
+# Local editor and OS artifacts
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

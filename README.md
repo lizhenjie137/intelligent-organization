@@ -200,6 +200,15 @@ Skill 用结构化说明描述能力：名称与用途、输入、输出、验�
 .\Start-Xiaolajiao.ps1
 ```
 
+如果通过 Git 克隆整个仓库，请先进入所选语言目录，再运行上面的安装与启动命令。例如使用中文版：
+
+```powershell
+git clone https://github.com/lizhenjie137/intelligent-organization.git
+cd intelligent-organization\editions\zh
+```
+
+英文版进入 `editions/en`。仓库根目录本身不是应用运行目录；独立源码 ZIP 则直接在解压后的目录运行。
+
 浏览器入口为中文 `http://127.0.0.1:8769`、英文 `http://127.0.0.1:8771`。打开后按同样流程注册。若端口已被占用，启动脚本会停止并提示，不会把已有服务当作当前工作空间；可改用一个空闲端口，例如：
 
 ```powershell

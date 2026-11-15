@@ -1,5 +1,5 @@
 Xiaolajiao Source-Available License (No Resale)
-Version 1.0 — unpublished review draft, 2026-11-15
+Version 1.0 — 2026-11-16
 Copyright (c) 2026 执棋会AI / Zhiqihui AI
 
 1. Scope
@@ -39,8 +39,7 @@ the Software or its use.
 
 6. Status
 This is a custom source-available license with a no-resale condition, not
-an OSI-approved open-source license. This copy is prepared for review before
-publication. A change to future license versions does not silently replace
+an OSI-approved open-source license. A change to future license versions does not silently replace
 the terms supplied with this copy.
 
 中文对照
@@ -71,5 +70,5 @@ THIRD_PARTY/ 中的许可继续适用。本许可证不授予商标背书权。
 
 6. 状态
 这是包含禁止转售条件的自定义源码可用许可证，不是经 OSI 认可的开源许可。
-本文件为发布前审阅稿。后续版本的条款修改不会自动替换随本副本提供的条款。
+后续版本的条款修改不会自动替换随本副本提供的条款。
 

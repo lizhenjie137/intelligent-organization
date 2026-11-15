@@ -1,0 +1,11 @@
+{
+  "connection": "cloud",
+  "protocol": "deepseek-messages",
+  "base_url": "https://api.deepseek.com/anthropic",
+  "model": "deepseek-flash",
+  "api_key_env": "ORG_MODEL_API_KEY",
+  "timeout_seconds": 120,
+  "max_tokens": 4096,
+  "max_concurrency": 4,
+  "context_window": 32768
+}

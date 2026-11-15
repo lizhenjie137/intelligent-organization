@@ -1,0 +1,73 @@
+{
+  "name": "xiaolajiao-en",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A shared workspace for people and AI Agents",
+  "author": "执棋会AI / Zhiqihui AI",
+  "license": "SEE LICENSE IN LICENSE",
+  "main": "desktop/main.cjs",
+  "scripts": {
+    "desktop:dev": "electron .",
+    "desktop:pack": "electron-builder --win nsis --x64 --publish never",
+    "test:desktop": "node --test tests/desktop_shell.test.cjs"
+  },
+  "devDependencies": {
+    "electron": "45.3.2",
+    "electron-builder": "26.18.0"
+  },
+  "build": {
+    "appId": "ai.zhiqihui.xiaolajiao.en",
+    "productName": "Xiaolajiao Intelligent Organization",
+    "directories": {
+      "output": "dist",
+      "buildResources": "desktop"
+    },
+    "files": [
+      "desktop/**",
+      "package.json",
+      "LICENSE",
+      "LICENSING.md",
+      "THIRD_PARTY_NOTICES.md",
+      "THIRD_PARTY/**",
+      "!desktop/*.py",
+      "!desktop/*.spec",
+      "!desktop/*.ps1"
+    ],
+    "extraResources": [
+      {
+        "from": "build/backend/xiaolajiao-server",
+        "to": "backend",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "desktop/icon.ico",
+      "artifactName": "Xiaolajiao-en-${version}-Windows-x64-Setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": false,
+      "installerLanguages": [
+        "en_US"
+      ],
+      "language": "1033",
+      "license": "LICENSE"
+    }
+  }
+}
+

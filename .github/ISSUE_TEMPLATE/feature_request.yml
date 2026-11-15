@@ -1,0 +1,10 @@
+name: Feature request
+description: Describe the workflow and desired outcome.
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow and proposed behavior
+      description: Explain who needs this and how it should work. Do not include private organization information.
+    validations:
+      required: true

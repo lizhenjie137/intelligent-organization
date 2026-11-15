@@ -1,0 +1,74 @@
+Xiaolajiao Source-Available License (No Resale)
+Version 1.0 — 2026-11-16
+Copyright (c) 2026 执棋会AI / Zhiqihui AI
+
+1. Scope
+This license covers the original Xiaolajiao application code, documentation
+and original artwork supplied with this file (the "Software"). Separately
+licensed third-party components are excluded; their own licenses apply.
+
+2. Permission
+Subject to these terms, you may download, install, run, study, copy and
+modify the Software, including for internal work and secondary development.
+You may redistribute the original or modified Software without charge.
+Retain this license, the copyright notice and applicable third-party notices
+in every redistribution. Identify your modifications and do not represent
+a modified edition as an official release by the copyright holder.
+
+3. No resale
+Without separate written authorization from the copyright holder, you may
+not sell the original or modified Software, charge for a license to it, or
+redistribute its source or installation packages for payment. Renaming,
+rebranding or bundling the Software with other products does not remove
+this restriction. A downstream recipient must receive the rights and
+restrictions in this license for the covered Software.
+Using the Software in your own work is permitted; this is a restriction
+on selling the Software, not a general ban on commercial activity.
+
+4. Third-party rights
+This license does not restrict rights granted independently by third-party
+licenses, including the licenses in THIRD_PARTY/. It does not relicense
+third-party software. No trademark endorsement is granted.
+
+5. Warranty and liability
+To the extent permitted by applicable law, the Software is provided "AS IS",
+without warranties, including merchantability, fitness for a particular
+purpose or noninfringement. To the extent permitted by law, the copyright
+holder and contributors are not liable for claims or damages arising from
+the Software or its use.
+
+6. Status
+This is a custom source-available license with a no-resale condition, not
+an OSI-approved open-source license. A change to future license versions does not silently replace
+the terms supplied with this copy.
+
+中文对照
+
+1. 范围
+本许可证适用于随本文件提供的小辣椒应用原创代码、文档及原创美术素材
+（下称“软件”）。单独授权的第三方组件不在此范围内，仍适用其自身许可。
+
+2. 允许事项
+在遵守本许可证的前提下，允许下载、安装、运行、研究、复制、修改软件，
+包括用于内部工作和二次开发。允许免费再分发原版或修改版。
+再分发时须保留本许可证、版权声明及适用的第三方声明；须标明修改内容，
+不得将修改版冒充为版权方发布的官方版本。
+
+3. 不得售卖
+未经版权方另行书面授权，不得售卖软件原版或修改版、对其许可收费，
+或有偿分发其源码、安装包。改名、换标或与其他产品捆绑，不免除此限制。
+下游接收者应获得本许可证对所涵盖软件规定的权利与限制。
+允许将软件用于自己的工作；本条限制售卖软件，并非全面禁止商业活动。
+
+4. 第三方权利
+本许可证不限制第三方许可独立授予的权利，不重新授权第三方软件；
+THIRD_PARTY/ 中的许可继续适用。本许可证不授予商标背书权。
+
+5. 保证与责任
+在适用法律允许的范围内，软件按现状提供，不作适销性、特定用途适用性
+或不侵权等保证；版权方及贡献者不对因软件及其使用产生的请求或损害负责。
+
+6. 状态
+这是包含禁止转售条件的自定义源码可用许可证，不是经 OSI 认可的开源许可。
+后续版本的条款修改不会自动替换随本副本提供的条款。
+

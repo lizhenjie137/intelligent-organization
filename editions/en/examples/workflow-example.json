@@ -1,0 +1,52 @@
+{
+  "title": "Create a cross-functional collaboration plan",
+  "brief": "The product, operations and content teams need shared goals and clear delivery responsibilities.",
+  "criteria": "The plan identifies deliverables, proposed owners and review methods. The goal owner reviews the outcome before approval.",
+  "priority": "P2",
+  "budget": 12,
+  "steps": [
+    {
+      "key": "understand",
+      "title": "Clarify collaboration boundaries",
+      "capability_id": "analyze",
+      "depends_on": [],
+      "risk": "low"
+    },
+    {
+      "key": "proposal",
+      "title": "Draft a collaboration plan",
+      "capability_id": "draft",
+      "depends_on": [
+        "understand"
+      ],
+      "risk": "medium"
+    },
+    {
+      "key": "quality",
+      "title": "Check delivery requirements",
+      "capability_id": "review",
+      "depends_on": [
+        "proposal"
+      ],
+      "risk": "medium"
+    },
+    {
+      "key": "decision",
+      "title": "Owner review",
+      "capability_id": "approve",
+      "depends_on": [
+        "quality"
+      ],
+      "risk": "high"
+    },
+    {
+      "key": "learning",
+      "title": "Record collaboration lessons",
+      "capability_id": "reflect",
+      "depends_on": [
+        "decision"
+      ],
+      "risk": "low"
+    }
+  ]
+}

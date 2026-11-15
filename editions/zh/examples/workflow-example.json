@@ -1,0 +1,14 @@
+{
+  "title": "形成跨职能协作方案",
+  "brief": "产品、运营和内容团队需要统一目标与交付责任。",
+  "criteria": "方案明确交付物、责任建议和验收方法；负责人审阅后决定是否通过。",
+  "priority": "P2",
+  "budget": 12,
+  "steps": [
+    {"key": "understand", "title": "明确协作边界", "capability_id": "analyze", "depends_on": [], "risk": "low"},
+    {"key": "proposal", "title": "起草协作方案", "capability_id": "draft", "depends_on": ["understand"], "risk": "medium"},
+    {"key": "quality", "title": "检查交付要求", "capability_id": "review", "depends_on": ["proposal"], "risk": "medium"},
+    {"key": "decision", "title": "负责人验收", "capability_id": "approve", "depends_on": ["quality"], "risk": "high"},
+    {"key": "learning", "title": "沉淀协作经验", "capability_id": "reflect", "depends_on": ["decision"], "risk": "low"}
+  ]
+}

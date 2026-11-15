@@ -1,0 +1,11 @@
+{
+  "connection": "local",
+  "protocol": "openai-completions",
+  "base_url": "http://127.0.0.1:8000/v1",
+  "model": "REPLACE_WITH_LOCAL_MODEL",
+  "api_key_env": "",
+  "timeout_seconds": 120,
+  "max_tokens": 4096,
+  "max_concurrency": 4,
+  "context_window": 32768
+}

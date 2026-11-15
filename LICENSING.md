@@ -4,7 +4,7 @@
 
 使用软件完成自己的工作是允许的；这里限制的是售卖软件，不是全面禁止商业活动。完整条款见 [LICENSE](LICENSE)。本文件是使用说明，不替代许可证。
 
-本次准备的是发布前审阅稿，尚未向 GitHub 发布。包含禁止转售限制的自定义许可属于 **source-available（源码可用）**，不标注为 MIT、Apache 或 OSI 认可的开源许可。
+包含禁止转售限制的自定义许可属于 **source-available（源码可用）**，不标注为 MIT、Apache 或 OSI 认可的开源许可。
 
 第三方组件继续使用各自的许可证；应用的禁止售卖条款不改变第三方独立授予的权利，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。相关使用规则由执棋会AI提供说明。
 
